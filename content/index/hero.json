@@ -1,6 +1,6 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
+		"start": "const Favour = ( name, passion ) =>",
 		"end": "Hello, my name is",
 		"speed": 60,
 		"deletionSpeed": 80,
@@ -11,11 +11,11 @@
 	},
 
 	"header": {
-		"name": "Andrew Nelson.",
+		"name": "Favour Chamberlain.",
 		"usp": "I design and build meaningful experiences."
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "I am a frontend developer dedicated to crafting intuitive and engaging user experiences. With a keen eye for design and a passion for problem-solving, I transform ideas into seamless digital interfaces that captivate and inspire users.",
 
 	"buttons": {
 		"primary": {
