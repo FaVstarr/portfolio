@@ -30,20 +30,20 @@ export default function Technical() {
 				<SectionTitle
 					title="Technical"
 					preTitle="Hardskills"
-					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
+					subTitle="As a frontend developer, I build intuitive digital experiences using a diverse set of tools and technologies."
 				/>
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
-							title="Polymath foundations"
+							title="Versatile Expertise"
 							icon={[ 'fat', 'chart-network' ]}
-							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
+							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and I am constantly learning and evolving to stay up-to-date with the latest industry trends."
 							iconClass={about.icon}
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
 							title="Software I love to work with" 
-							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							copy="Over my years of experience as a frontend developer, I have developed a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used during that time."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
