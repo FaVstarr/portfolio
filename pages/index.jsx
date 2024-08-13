@@ -4,7 +4,7 @@ import About 		from '../components/sections/index/about'
 import Technical 	from '../components/sections/index/technical'
 import Career 		from '../components/sections/index/career'
 import FeaturedProjects	from '../components/sections/projects/featured'
-
+import Contact from '../components/sections/index/contact'
 import Color 		from '../components/utils/page.colors.util'
 
 import colors 		from '../content/index/_colors.json'
@@ -20,6 +20,7 @@ export default function HomePage() {
 			<FeaturedProjects id="featured" />
 			<About id="about" />
 			<Technical />
+			<Contact />
 			{/* <Career /> */}
 		</>
 	);
