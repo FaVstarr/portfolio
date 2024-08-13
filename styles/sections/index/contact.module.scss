@@ -1,0 +1,30 @@
+@import '../../scss/_mixins';
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    
+
+    .header{
+        
+        margin-bottom: 1.5rem;
+    }
+
+    .iconContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+        .icon{
+            width: 100%;
+        }
+
+        .button{
+            cursor: pointer;
+            
+        }
+    }
+
+   
+}

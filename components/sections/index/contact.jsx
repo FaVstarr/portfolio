@@ -5,10 +5,15 @@ import Container from '../../structure/container';
 
 // Section general blocks
 import SectionTitle from '../../blocks/section.title.block'
-import SectionGridBg from '../../blocks/section.grid.block'
+
 
 // Section scss
 import contact from '../../../styles/sections/index/contact.module.scss'
+import button 		from '../../../styles/blocks/button.module.scss';
+
+// Icons
+import { CiMail } from "react-icons/ci";
+import { IoIosCall } from "react-icons/io";
 
 export default function Contact() {
   return (
@@ -17,35 +22,36 @@ export default function Contact() {
         <Section classProp={contact.section}>
             <Container spacing={['verticalXXXLrg']}>
                 <SectionTitle
-                    title="Contact Me"
+                    title="Reach Out To Me"
                     preTitle="Let's Connect"
                     subTitle="I'd love to hear from you."
                 />
-                <SectionGridBg classProp={contact.grid}>
-                    <div>
-                        <h3>Email</h3>
-                        <p>chambers@example.com</p>
+               
+            <section className={contact.section}>
+                <div>
+                    <div className={contact.iconContainer}>
+                    <CiMail className={contact.icon} />
                     </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+1 123-456-7890</p>
+                    <h3 className={contact.header}>Send a mail</h3>
+                    <div className={contact.buttonContainer}>
+                        <button className={`button ${button.primary}`}>Send</button>
                     </div>
-                    <div>
-                        <h3>Social Media</h3>
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Github</a></li>
-                            <li><a href="#">Instagram</a></li>
-                        </ul>
+                </div>
+                <div>
+                    <div className={contact.iconContainer}>
+                    <IoIosCall className={contact.icon} />
                     </div>
-                </SectionGridBg>
+                   
+                    <h3 className={contact.header}>Place a call</h3>
 
-        </Container>
-            <h1>Reach out to me</h1>
-            <p>Feel free to reach out to me at the following.</p>
-            <div>
+                    <div className={contact.buttonContainer}>
+                        <button className={`button ${button.primary}`}>Dial</button>
+                    </div>
+                </div>
+            </section>
 
-            </div>
+            </Container>
+            
         </Section>
     </div>
   )
