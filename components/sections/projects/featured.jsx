@@ -11,10 +11,10 @@ import SectionTitle from '../../blocks/section.title.block'
 import css 			from '../../../styles/sections/projects/featured.module.scss'
 import content 		from '../../../content/projects/featured.json'
 
-export default function FeaturedProjects() {
+export default function FeaturedProjects({id}) {
 
 	return (
-		<Section classProp={css.hasBg}>	
+		<Section classProp={css.hasBg} id={id}>	
 			<Container spacing={'verticalXXXXLrg'}>
 				<SectionTitle
 					title="Featured Projects"

@@ -10,7 +10,7 @@
 		flex-direction: row;
 		gap: 1rem;
 
-		> div {
+		>div {
 			padding: 0;
 		}
 
@@ -92,13 +92,13 @@
 
 
 		}
-		
+
 		// Columns
 		.image {
 			flex-basis: 50%;
 			flex-grow: 1;
 			flex-shrink: 1;
-			position: relative;
+			position: relative !important ;
 
 			img {
 				height: 100%;
@@ -106,17 +106,19 @@
 				aspect-ratio: 3/4;
 				object-fit: cover;
 				border-radius: 2rem;
+				z-index: -1 !important;
 			}
 
 			&.technicalSvg {
-				> span {
+				>span {
 					position: relative !important;
 					overflow: visible !important;
 					height: 100% !important;
-					z-index: -1;	
+					z-index: -1 !important;
 				}
-				img {    
-					overflow: visible;		
+
+				img {
+					overflow: visible;
 					filter: brightness(100%);
 				}
 			}
@@ -129,7 +131,7 @@
 		.content {
 			flex-direction: column;
 
-			> div {
+			>div {
 				flex-basis: 100% !important;
 			}
 
@@ -139,6 +141,7 @@
 
 			.image {
 				padding: 1rem;
+
 				&.technicalSvg {
 					position: absolute;
 					top: 50%;
