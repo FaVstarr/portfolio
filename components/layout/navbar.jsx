@@ -12,6 +12,21 @@ export default function Navbar() {
 
 	const router = useRouter()
 
+	
+
+	const handleNavigation = (url) => (e) => {
+	  e.preventDefault(); // Prevent the default anchor behavior
+	  const targetId = url.split('#')[1]; // Extract the ID from the URL
+	  const targetElement = document.getElementById(targetId);
+  
+	  if (targetElement) {
+		targetElement.scrollIntoView({ behavior: 'smooth' });
+	  } else {
+		// If the element is not found, navigate using Next.js router
+		router.push(url);
+	  }
+	};
+
 
 	const [ menuState, menuToggle ] = useState()
 
@@ -151,8 +166,10 @@ export default function Navbar() {
 						content.map( ({ url, title }, index) => {
 							return (
 								<li key={index}>
-									<Link href={url}>{title}</Link>
-								</li>
+								<a href={url} onClick={handleNavigation(url)}>
+								  {title}
+								</a>
+							  </li>
 							)
 						})	
 						}

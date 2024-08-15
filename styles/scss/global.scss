@@ -9,13 +9,13 @@
 html {
 	font-size: 16px;
 	font-family: var(--font-sans);
-
+	
 	color: var(--primary-dim);
 	background: var(--background);
 	
 	text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-	scroll-behavior: smooth;
+	
 }
 
 #__next {

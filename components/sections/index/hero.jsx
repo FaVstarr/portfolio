@@ -34,7 +34,12 @@ export default function Hero() {
 	const router = useRouter()
 
 	const handleClick = () =>{
-		router.push('/#contact')
+		const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    router.push('/#contact');
+  }
 	}
 
 	return (
