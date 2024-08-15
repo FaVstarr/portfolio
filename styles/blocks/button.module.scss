@@ -7,6 +7,14 @@ button {
 		&:hover {
 			background-color: var(--secondary-bright);
 		}
+
+		
+
+		.a{
+			color: var(--background);
+            text-decoration: none;
+		}
+		
 	}
 
 	&.secondary {
@@ -19,4 +27,6 @@ button {
 			background-color: var(--primary-dark);
 		}
 	}
+
+	
 }

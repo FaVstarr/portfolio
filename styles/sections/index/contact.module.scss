@@ -4,9 +4,14 @@
     display: flex;
     justify-content: space-between;
     
+    .verticalLine{
+        border-left: 1px solid black;
+        left: 50%;
+        border-radius: 3px 3px 3px 3px;
+    }
 
     .header{
-        
+        margin-left: 1rem;
         margin-bottom: 1.5rem;
     }
 
@@ -17,12 +22,7 @@
 
         
         .icon{
-            width: 100%;
-        }
-
-        .button{
-            cursor: pointer;
-            
+        
         }
     }
 

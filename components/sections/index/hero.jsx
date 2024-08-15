@@ -1,4 +1,5 @@
 import { useState } 		from 'react';
+import { useRouter }  from 'next/router'
 import { TypeAnimation } 	from 'react-type-animation';
 
 import Section 		from '../../structure/section';
@@ -29,6 +30,12 @@ import content		from '../../../content/index/hero.json'
 export default function Hero() {
 
 	const [typingStatus, setTypingStatus] = useState('Initializing');
+
+	const router = useRouter()
+
+	const handleClick = () =>{
+		router.push('/#contact')
+	}
 
 	return (
 		<Section classProp={`${hero.section}`}>
@@ -64,9 +71,9 @@ export default function Hero() {
 					</p>					
 				</section>
 				<section>
-					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:favourchamberlain32@gmail.com' } >
-						{content.buttons.primary.title}
+					<button className={`button ${button.primary}`} 
+						onClick={handleClick}>
+							{content.buttons.primary.title}					
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
 							onClick={ ()=> window.open("https://www.linkedin.com/in/favour-chamberlain/", "_blank") } >

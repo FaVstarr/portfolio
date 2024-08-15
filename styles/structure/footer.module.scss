@@ -32,7 +32,9 @@
 	.sections {
 		$gap: 2rem;
 		display: flex;
-		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		// flex-direction: row;
 		//justify-content: space-between;
 		gap: $gap;
 
@@ -64,6 +66,7 @@
 		flex-direction: row;
 		gap: 1rem;
 		align-items: center;
+		justify-content: center;
 
 		svg {
 			height: 2rem;

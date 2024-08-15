@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <div>
 
-        <Section classProp={contact.section}>
+        <Section classProp={contact.section} >
             <Container spacing={['verticalXXXLrg']}>
                 <SectionTitle
                     title="Reach Out To Me"
@@ -30,22 +30,23 @@ export default function Contact() {
             <section className={contact.section}>
                 <div>
                     <div className={contact.iconContainer}>
-                    <CiMail className={contact.icon} />
+                    <CiMail className={contact.icon} size={70} />
                     </div>
                     <h3 className={contact.header}>Send a mail</h3>
                     <div className={contact.buttonContainer}>
-                        <button className={`button ${button.primary}`}>Send</button>
+                        <button className={`button ${button.primary}`} onClick={()=> window.location = "mailto:favourchamberlain32@gmail.com"} >Send</button>
                     </div>
                 </div>
+                <div className={contact.verticalLine}></div>
                 <div>
                     <div className={contact.iconContainer}>
-                    <IoIosCall className={contact.icon} />
+                    <IoIosCall className={contact.icon} size={70} />
                     </div>
                    
                     <h3 className={contact.header}>Place a call</h3>
 
                     <div className={contact.buttonContainer}>
-                        <button className={`button ${button.primary}`}>Dial</button>
+                        <button className={`button ${button.primary}`} onClick={()=> window.location = "tel:+2347080136822"} >Dial</button>
                     </div>
                 </div>
             </section>

@@ -23,9 +23,9 @@ import about from '../../../styles/sections/index/about.module.scss';
  * 
  * @returns {jsx} <About />
  */
-export default function About({id}) {
+export default function About() {
 	return (
-		<Section classProp={about.section} id={id}>	
+		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="About Me"

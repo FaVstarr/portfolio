@@ -32,13 +32,10 @@ export default function Footer() {
 		<footer className={css.container}>
 			<Container spacing={['verticalXXLrg', 'bottomLrg']}>
 				<section className={css.sections}>
-					<ul className={css.thanks}>
-						
-						
-					</ul>
+					
 					
 					<ul className={css.social}>
-						<li><h4 className=''>Portfolio made with Love </h4></li>
+						<li><h4 className={css.socialList}>Socials </h4></li>
 						<li className={css.socialList}>
 							{
 							content.social.map( ({ url, icon }, index) => {

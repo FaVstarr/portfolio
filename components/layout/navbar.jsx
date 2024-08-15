@@ -12,6 +12,7 @@ export default function Navbar() {
 
 	const router = useRouter()
 
+
 	const [ menuState, menuToggle ] = useState()
 
 	useEffect( () => {
