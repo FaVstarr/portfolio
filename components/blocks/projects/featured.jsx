@@ -10,7 +10,7 @@ import Icon 		from '../../utils/icon.util'
 import css 			from '../../../styles/sections/projects/featured.module.scss'
 import content 		from '../../../content/projects/featured.json'
 
-export default function FeaturedProject({ content }, index) {
+export default function FeaturedProject({ content, onClick }, index) {
 
 	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
 
@@ -34,7 +34,8 @@ export default function FeaturedProject({ content }, index) {
 			variants={container}
 			initial={[ "rest", "hidden" ]}
 			whileHover="hover"
-			animate={controls} >
+			animate={controls}
+			onClick={onClick} >
 			
 			<div className={css.details}>
 				<div className={css.projectHeader}>

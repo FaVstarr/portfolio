@@ -22,8 +22,15 @@ export default function FeaturedProjects() {
 					subTitle="Focused on the experience, driven by the engineering."
 				/> 				{
 				content.map( (data, index) => {
+					const handleClick = () =>{
+						
+						window.open(data.url, '_blank')
+					}
+
+					console.log('Rendering FeaturedProject', data);
+
 					return (
-						<FeaturedProject content={data} index={index} key={index} />
+						<FeaturedProject content={data} index={index} key={index} onClick={handleClick}  />
 					)
 				})
 				}
