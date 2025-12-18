@@ -25,16 +25,16 @@
 		]
 	},
 	{
-		"project": "Takas",
-		"url": "https://takas.vercel.app/",
+		"project": "Doz Claire Compassionate Care",
+		"url": "https://www.dozclairecompassionatecare.com/",
 		"repo": "Private",
-		"descriptionTitle": "An online thrift store",
+		"descriptionTitle": "A passionate caregiver providing exceptional in-home care services.",
 		"description": "built on Next.js and React.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "400", "w": "356",  "url": "/img/takas-mockup.png" }
+			{ "key": "portfolio", "hover": "left", "h": "400", "w": "356",  "url": "/img/dozclaire.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },

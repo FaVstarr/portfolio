@@ -46,7 +46,7 @@ export default function Contact() {
                     <h3 className={contact.header}>Place a call</h3>
 
                     <div className={contact.buttonContainer}>
-                        <button className={`button ${button.primary}`} onClick={()=> window.location = "tel:+2347080136822"} >Dial</button>
+                        <button className={`button ${button.primary}`} onClick={()=> window.location = "tel:+2349139044160"} >Dial</button>
                     </div>
                 </div>
             </section>
