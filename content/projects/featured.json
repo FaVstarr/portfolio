@@ -34,7 +34,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "400", "w": "356",  "url": "/img/dozclaire.png" }
+			{ "key": "portfolio", "hover": "right", "h": "400", "w": "356",  "url": "/img/dozclaire.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
@@ -42,9 +42,6 @@
 			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
 			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
 			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
 		]
 	}
